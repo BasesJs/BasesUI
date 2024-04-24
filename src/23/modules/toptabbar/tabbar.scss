@@ -1,0 +1,42 @@
+/*
+    This will be compiled and added to the _studio-structural.css
+*/
+.tab-bar {
+    flex-flow: row nowrap;
+    align-items: stretch;
+    flex: 0 0 content;
+    padding: 0 5px !important;
+    overflow: auto;
+    min-height: 15px;
+}
+.wrap-tabs {
+    flex-wrap: wrap;
+}
+.tab-btn {
+    display: inline-block;
+    cursor: pointer;
+    min-width: 120px;
+    flex: 0 0 content;
+    padding: 11px 11px !important;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: var(--font-color);
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
+}
+
+.tab-btn:hover {
+    background: var(--primary-color);
+    color: rgb(var(--font-light)) !important;
+}
+
+.active-tab-btn {
+    color: var(--primary-color);
+    background: white;
+    font-weight: 600;
+}

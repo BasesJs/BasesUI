@@ -1,0 +1,18 @@
+.header{					   
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: var(--field-height);
+}
+component-panel.header,
+.header {
+    flex-flow: row nowrap;
+    min-width: 100%;
+    flex: 0 0 content;
+    min-height: 64px;
+    overflow: hidden;
+    justify-content: space-between !important;
+}

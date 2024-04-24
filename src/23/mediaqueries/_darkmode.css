@@ -1,0 +1,129 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+	--primary-rgb: 9, 134, 213;
+	--body-color: rgb(var(--body-dark));
+	--header-color: rgba(var(--dark-gray), 1);
+	--font-color: rgba(var(--font-light),1);
+    --border-color: rgba(var(--light-gray), .25);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+	ul.hsi_workviewToolbar {
+		background-color: rgba(0,0,0,.9);
+	}
+	ul.hsi_workviewToolbar button.hsi_iconButton:hover:enabled {
+	    cursor: pointer;
+	    background-color: rgba(var(--light-gray),.2);
+	}
+	ul.hsi_workviewToolbar button.hsi_iconButton + ul > li > button.hsi_iconButton {	    
+	    background-color: rgba(0,0,0,.9);
+	}
+	ul.hsi_workviewToolbar button.hsi_iconButton + ul > li > button.hsi_iconButton:hover:enabled,
+	ul.hsi_workviewToolbar button.hsi_iconButton:focus:enabled  {	    
+	    background-color: rgba(0,0,0,.7);
+	}	
+}
+@media (prefers-color-scheme: dark) {
+  .hsi_wv_field:not(.hsi_wv_field[data-attributetype="9"]):not(.inline):not(.title-wrapper):not(.text-wrapper) div div:not(.hasFocus),
+  .hsi_wv_field:not(.hsi_wv_field[data-attributetype="9"]):not(.inline):not(.title-wrapper):not(.text-wrapper) div div:not(.hasFocus){
+	    background: rgba(var(--dark-gray), 1) !important;
+		border-bottom: 2px solid rgba(var(--light-gray),1);
+  }
+  .hsi_wv_field:not(.title-wrapper):not(.text-wrapper):not(.hsi_wv_field[data-attributetype="9"])>div>.hasFocus  {
+    background: rgba(var(--dark-gray), 1) !important;
+}
+  /*Read-only State*/
+    .readonly:not(.title-wrapper):not(.text-wrapper):not(.inline) div div,
+    .hsi_wv_field[data-readonly="1"]:not(.text-wrapper):not(.title-wrapper):not(.hsi_wv_field[data-attributetype="9"]):not(.inline) div div {
+        background-color: rgb(var(--readonly-dark-bg)) !important;
+        border-color: var(--border-color);        
+    }
+	readonly:not(.title-wrapper):not(.text-wrapper) div div input,
+    .hsi_wv_field[data-readonly="1"]:not(.text-wrapper):not(.title-wrapper):not(.hsi_wv_field[data-attributetype="9"]) div div input{
+		color: rgba(var(--font-color),.7) !important;
+	}
+	.inline.hsi_wv_field[data-readonly="1"]:not(.title-wrapper):not(.text-wrapper) div div {
+		background: none !important;
+		background-color: transparent !important;
+	}
+}
+@media (prefers-color-scheme: dark) {
+    .hsi_wv_embedded_control_container {
+        border: 1px solid rgba(var(--dark-gray),.7) !important;
+    }
+	.hsi_wv_filtercontrol[data-role="filterbody"] {
+	    background-color: black;
+	    border-top: 1px groove rgba(204, 204, 204, 0.6);
+	 }
+	 
+	.ui-autocomplete li:nth-child(odd), li.hsi_wv_folder_row:nth-child(odd), .hsi_wv_filtercontrol[data-role=filterbody] tbody tr:nth-child(odd) {
+	    background-color: black;
+		color: var(--font-color);
+	}
+	.hsi_wv_embedded_control_container_wrapper .ui-widget-header {
+	    background-color: black;
+	}
+	.hsi_wv_filtercontrol div[data-role="header"] th {
+	    background-color: black;
+	}
+	.hsi_wv_filterfooter td[data-role=items_per_page_selector] select, .hsi_wv_filterfooter td[data-role="crc"] select {
+	    background: none;
+	
+	}
+	.ui-menu .ui-menu-item-wrapper {
+        color: var(--font-color);
+    }
+    .hsi_wv_embedded_control_container {
+        background-color: black;
+
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+	.active-tab-btn {
+	    background-color: rgba(var(--light-gray),.2);
+	    font-weight: 600;
+	}
+	.tab-btn:hover {
+    	background-color: var(--primary-color);	
+	}
+}
+
+@media (prefers-color-scheme: dark) {    
+    .side-tab-spacer {        
+        border-right: 1px solid rgba(var(--light-gray), .25);
+    }
+    .side-tab {
+		border-left: 10px solid rgba(var(--light-gray), .25);
+        border-right: 1px solid rgba(var(--light-gray), .25);
+        border-top: 1px solid rgba(var(--light-gray), .25);
+    }
+    .side-tab-footer {
+        border-top: 1px solid rgba(var(--light-gray), .25);
+        border-right: 1px solid rgba(var(--light-gray), .25);
+    }
+	.active-side-tab {        
+        background-color: black;
+		color: var(--primary-color) !important;
+		border-left: 10px solid var(--primary-color) !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+	.hsi_wv_actiontoolbar {
+		background-color: rgba(0,0,0,.9);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+.lu{
+ background-color: rgb(var(--body-dark));
+}
+.lu .rail .card,
+.lu .container .section {
+	    border-radius: 5px;
+		border: 1px solid var(--border-color);
+		background-color: rgba(var(--light-gray),.2);
+	}
+}

@@ -1,0 +1,16 @@
+.card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: var(--field-height);
+}
+.segment,
+.card {
+    flex-flow: column nowrap;
+    flex: 0 0 content;
+    padding: var(--space-default) !important;
+    overflow: hidden !important;
+}

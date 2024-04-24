@@ -1,0 +1,43 @@
+:root {
+    /*  Customer Branding Specific  */
+    --primary-rgb: 22, 0, 98;
+    --primary-color: rgba(var(--primary-rgb), 1);
+    --secondary-rgb: 255, 151, 87;
+    --secondary-color: rgba(var(--secondary-rgb), 1);
+    --primary-btn-hover: rgba(var(--primary-rgb), 0.8);
+    --secondary-btn-hover: rgba(var(--secondary-rgb), 0.8);
+    --light-gray: 221, 221, 221;
+    --dark-gray: 38, 38, 38;
+    --neutral-rgb: 130, 130, 130;
+    --neutral-color: rgba(var(--neutral-rgb), 1);
+    --neutral-color-hover: rgba(var(--neutral-rgb), 8);
+    --body-light: rgba(var(--light-gray), 0.15);
+    --body-dark: var(--dark-gray);
+    --body-color: rgb(var(--body-light));
+    --header-color: rgba(var(--light-gray), 1);
+    --header-color-hover: rgba(var(--header-color), 0.6);
+    --border-color: rgba(var(--dark-gray), 0.25);
+    --readonly-light-bg: 238, 238, 238;
+    --readonly-dark-bg: 99, 99, 99;
+    /*  Font Settings   */
+    --font-family: "Urbanist", "Raleway", sans-serif;
+    --font-weight: 400;
+    --line-spacing: 1.6;
+    --focus-color: var(--primary-color);
+    --font-dark: 16, 16, 16;
+    --font-light: 256, 256, 256;
+    --font-color: rgb(var(--font-dark));
+    /*  Workview Settings   */
+    --filter-padding: 14px;
+    --field-height: 38px;
+    --field-padding: 5px;
+    /*  Framework settings  */
+    --rail-width: 325px;
+    --position: fixed;
+    --studio-borders: 1px dashed #aaa;
+    /*  Controls Pad & Gap short-hand   */
+    --small: 5px;
+    --medium: 15px;
+    --large: 25px;
+    --space-default: var(--medium);
+}

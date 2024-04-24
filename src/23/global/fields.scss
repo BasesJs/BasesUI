@@ -1,0 +1,195 @@
+/*HAS TO STAY IN*/
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: var(--font-color);
+    background-color: white;
+}
+
+/*Standard Field*/
+/*Layer 1 - Main DIV*/
+.hsi_wv_field {
+    padding: 0;
+    margin-bottom: 4px;
+	}
+input,
+.hsi_wv_field *,
+.hsi_wv_field * *,
+.hsi_wv_field * * *
+{
+	background-color: transparent !important;
+	border: none ;
+}
+input.readonly,
+input[readonly="readonly"]{
+	background: transparent !important;
+}
+/**Layer 2 - Label **/
+.hsi_wv_field_label {
+    font-size: 1.4rem;
+    color: var(--font-color);
+}
+/** Layer 2 - Second DIV **/
+.hsi_wv_field>div {
+    min-height: var(--field-height);
+    height: 100%;
+}
+/*** Layer 3 - Third DIV ***
+/*Default State*/
+.hsi_wv_field>div>div{
+	display: inline-block;
+    position: relative;
+    background-color: rgb(var(--light-gray), .075);
+    background-image: none;
+    width: 100%;
+    height: 100%;
+    min-height: var(--field-height);
+    border: none;
+    border-bottom: 2px solid var(--border-color);
+    border-radius: 2.5px !important;
+    padding: var(--field-padding);
+}
+/*Read-only State*/
+.readonly:not(.title-wrapper) div div,
+.readonly:not(.text-wrapper) div div,
+.hsi_wv_field[data-readonly="1"]:not(.title-wrapper):not(.text-wrapper):not(.inline) div div{
+	background-color: rgba(var(--readonly-light-bg)) !important;
+	border-color: var(--border-color);
+	color: rgba(var(--font-dark),.7) !important;
+}
+/*Focus State*/
+.hsi_wv_field:not(.inline):not(.hsi_wv_field[data-readonly="1"]):not(.title-wrapper):not(.text-wrapper)>div>.hasFocus {
+    border-bottom: 4px solid var(--focus-color);
+    border-left: 1px solid rgba(var(--primary-rgb), .3);
+    border-right: 1px solid rgba(var(--primary-rgb), .3);
+    border-top: 1px solid rgba(var(--primary-rgb), .3);
+	border-radius: 2.5px !important;
+    box-shadow: none !important;
+}
+
+.hsi_wv_field div>div input,
+.hsi_wv_field div>div textarea {
+    width: 100%;
+    height: 100%;
+    padding: var(--field-padding);
+    background-color: transparent !important;
+	background: transparent !important;
+    background-image: none;
+    display: inline-block;
+	color: var(--font-color);
+}
+.hsi_wv_field:not(.text-wrapper):not(.title-wrapper)>div>.hasFocus>input[readonly="readonly"],
+.hsi_wv_field:not(.text-wrapper):not(.title-wrapper)>div>.hasFocus>input.readonly{
+	color: rgb(var(--font-dark)) !important;
+}
+.hsi_wv_field:not(.text-wrapper):not(.title-wrapper)>div>.hasFocus>input {
+    color: var(--focus-color);
+}
+.hsi_wv_field div span[data-role="lookupbutton"]:hover, body .hsi_wv_field div span[data-role="externalwindowbutton"]:hover, body .hsi_wv_field div span[data-role="importbutton"]:hover, .hsi_wv_filtercontrol[data-role="filterbody"] div[data-role=inputcell] span[data-role="lookupbutton"]:hover, .hsi_wv_filtercontrol[data-role="filterbody"] span[data-role="externalwindowbutton"]:hover, .hsi_wv_filtercontrol[data-role="filterbody"] span[data-role="documentwindowbutton"]:hover {
+    border: 0;
+    background-color: var(--primary-color) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inline.hsi_wv_field[data-readonly="1"]:not(.title-wrapper):not(.text-wrapper) div div {
+		background: none !important;
+		background-color: transparent !important;
+	}
+.hsi_wv_field div[data-button="lookup"]>div {
+    display: flex;
+    left: 0;
+    height: var(--field-height);
+    align-items: center;
+}
+
+.hsi_wv_field div span[data-role="lookupbutton"],
+.hsi_wv_field div span[data-role="importbutton"],
+.hsi_wv_field div span[data-role="externalwindowbutton"] {
+    width: auto !important;
+    height: 100% !important;
+}
+.text-wrapper.hsi_wv_field >div>div> input.hsi-wvRelationshipLookup-disabled.readonly,
+.title-wrapper.hsi_wv_field>div>div>input.hsi-wvRelationshipLookup-disabled.readonly {
+    background-color: transparent !important;
+}
+/****REQUIRED/ERRSTATE****/
+.ui-state-error{
+    background-color: rgba(255, 43, 43,.15) !important;
+    border-color: rgba(255,43,43, .75) !important;
+}
+
+/****CHECKBOX****/
+.hsi_wv_field.inline,
+.hsi_wv_field[data-attributetype="9"] {
+	min-height: var(--field-height);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.hsi_wv_field[data-readonly="1"][data-attributetype="9"] div>div,
+.hsi_wv_field[data-readonly="1"][data-actualattributetype="9"] div>div,
+.hsi_wv_field[data-attributetype="9"] div>div,
+.hsi_wv_field[data-actualattributetype="9"] div>div {
+    background: transparent !important;
+	background-color: transparent !important;
+	align-items: stretch;
+	border: none !important;
+}
+.hsi_wv_field div>div input[type=checkbox],
+.hsi_wv_field div>div textarea[type=checkbox] {
+    width: auto;
+    min-height: var(--field-height);
+    cursor: pointer;
+    vertical-align: middle;
+}
+.hsi_wv_field[data-attributetype="9"] label,
+.hsi_wv_field[data-actualattributetype="9"] label {
+    margin-top: 3px;
+    display: inline;
+    vertical-align: middle;
+    width: auto;
+    padding-left: 3px;
+}
+.hsi_wv_field div>div input[type=checkbox],
+.hsi_wv_field div>div textarea[type=checkbox] {
+    width: 1.7rem;
+    height: 1.7rem;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.redactor-box.redactor-styles-on {
+    border: none !important;
+}
+.redactor-toolbar a, .redactor-air a {    
+    color: var(--font-color);
+}
+
+.redactor-styles,
+.redactor-styles p,
+.redactor-styles dl,
+.redactor-styles blockquote,
+.redactor-styles hr,
+.redactor-styles pre,
+.redactor-styles table,
+.redactor-styles figure,
+.redactor-styles address {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+    font-size: 1.4rem;
+    color: var(--font-color);
+}
+.hsi_wv_field_lookup_menu_item_label {
+    font-size: 1.6rem;
+    color: var(--font-dark);
+}
+.required::after {
+    color: #ee3823;
+    content: "*";
+    font-size: 1.4rem;
+}

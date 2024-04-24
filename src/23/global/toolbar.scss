@@ -1,0 +1,50 @@
+ul.hsi_workviewToolbar button.hsi_iconButton {
+    background-color: transparent;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: 50% calc(50% + 4px);
+    border: none;
+    border-radius: initial;
+    position: relative;
+    font-size: 24px;
+    height: 60px;
+    width: 68px;
+}
+ul.hsi_workviewToolbar {
+    margin: 0;
+    list-style-type: none;
+    padding: 4px;
+    background-color: rgba(256,256,256,1);
+    border-bottom: 1px solid var(--border-color);
+}
+ul.hsi_workviewToolbar button.hsi_iconButton:hover:enabled {
+    cursor: pointer;
+    background-color: rgba(var(--dark-gray),.2);
+}
+ul.hsi_workviewToolbar button.hsi_iconButton>div {
+    position: relative;
+    bottom: -24px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+}
+ul.hsi_workviewToolbar button.hsi_iconButton>label {
+    margin: 0;
+    padding: 5px 0 0;
+    font-size: 0.375em;
+    line-height: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 34px;
+    font-weight: 100;
+    color: var(--font-color);
+    width: 65px;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    cursor: pointer;
+}
+ul.hsi_workviewToolbar li.hsi_wv_more_btn>button {
+    background-position: 50% 50%;
+}

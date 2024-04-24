@@ -1,0 +1,45 @@
+component-panel.container,
+.container {
+    flex-flow: column nowrap;
+    height: auto;
+    min-height: 64px;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 !important;
+    box-sizing: border-box;
+    max-width: 1000px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    justify-self: center;
+}
+
+component-panel.left.container,
+.left.container,
+component-panel.self-justify-start.container,
+.self-justify-start.container {
+    justify-self: flex-start;
+}
+
+component-panel.right.container,
+component-panel.self-justify-end.container,
+.right.container,
+.self-justify-end.container {
+    justify-self: flex-end;
+}
+
+component-panel.full.container,
+.full.container {
+    max-width: 100%;
+}
+
+component-panel.small.container,
+.small.container {
+    max-width: 600px;
+}
+
+component-panel.justify-center.container,
+.justify-center.container {
+    justify-content: center;
+}

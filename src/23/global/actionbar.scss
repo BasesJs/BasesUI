@@ -1,0 +1,64 @@
+.hsi_wv_actiontoolbar {
+    position: absolute;
+    top: 71px;
+    bottom: 0px;
+    right: 0px;
+    width: 0px;
+    text-align: center;
+    z-index: 0;
+    overflow: hidden auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    padding-top: 10px;
+    border-left: 2px solid var(--border-color);
+}
+.hsi_wv_actiontoolbar button {
+    width: 90%;
+    border: 1px solid var(--border-color);
+    margin: 2px 2px 5px;
+    text-transform: capitalize;
+    color: var(--font-color);
+    background: transparent;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5em;
+    border-radius: 99rem;
+}
+.hsi_wv_actiontoolbar>button>div>span{
+    text-transform: uppercase;
+}
+.hsi_wv_actiontoolbar button div {
+        text-align: left;
+}
+
+
+.hsi_wv_actiontoolbar>button:hover>div>span{
+    color: var(--font-light);
+}
+.hsi_wv_actiontoolbar button:hover {
+    cursor: pointer;
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+    color: rgb(var(--font-light)); 
+}
+.hsi_wv_actiontoolbar button:hover > * {
+    color: var(--font-light);
+}
+.hsi_wv_actiontoolbar button, .hsi_wv_actiontoolbar button:hover{
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+.hsi_wv_actiontoolbar img {
+
+    margin: 0 !important;
+    width: 24px;
+    height: auto;
+}

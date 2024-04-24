@@ -1,0 +1,24 @@
+.rail {
+    flex: 0 0 var(--rail-width) !important;
+    margin: 0 0 0 0 !important;
+    min-width: var(--rail-width);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.half.rail {
+    flex: 0 0 calc(var(--rail-width) / 2) !important;
+    min-width: calc(var(--rail-width) / 2);
+}
+.nav.rail {
+    flex: 0 0 64px !important;
+    min-width: 64px;
+}
+.tight.right.rail,
+.left.rail {
+    justify-self: flex-start;
+}
+.tight.left.rail,
+.right.rail {
+    justify-self: flex-start;
+}

@@ -1,0 +1,159 @@
+/*	----SECTION 1: WORKVIEW NORMALIZING -------------------------------------
+*   INSTRUCTIONS: This section must come first before the framework styling
+*   and SHOULD NOT BE EDITTED. IF there is an issue, log it in Devops. 
+*   These stylings will help things render better in the designer, so they 
+*   must exist here but may not necissarily represent the final styling.
+-----------------------------------------------------------------------------*/
+.hsi_wv_screen,
+.hsi_wv_view,
+component-template,
+.hsi_wv_viewtabscontrol {
+    padding: 0px !important;
+    margin: 0px !important;
+    border: none !important;
+}
+component-template > *,
+.hsi_wv_view > * {
+    text-align: left;
+}
+component-template,
+.hsi_wv_view {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: clip !important;
+    background-color: var(--body-color);
+    width: 100% !important;
+    height: 100% !important;
+}
+component-template.center,
+.hsi_wv_view.center {
+    align-items: center;
+}
+component-template.left,
+.hsi_wv_view.left {
+    align-items: flex-start;
+}
+
+component-template.right,
+.hsi_wv_view.right {
+    align-items: flex-end;
+}
+
+component-panel,
+.hsi_wv_panel {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+/* Button */
+component-button,
+.hsi_wv_manually_placed_button {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: var(--field-height) !important;
+    color: var(--font-color) !important;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent !important;
+    border-radius: 0.3rem;
+    border: 1px solid var(--border-color) !important;
+    cursor: pointer;
+    min-width: 100%;
+    margin-bottom: 4px;
+}
+.hsi_wv_manually_placed_button:focus,
+.hsi_wv_manually_placed_button:active,
+.hsi_wv_manually_placed_button:hover {
+    color: rgba(var(--primary-rgb), 0.8) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.hsi_wv_manually_placed_button.primary {
+    color: rgb(var(--font-light)) !important;
+    background-color: var(--primary-color) !important;
+    border: none !important;
+}
+
+.hsi_wv_manually_placed_button.primary:hover {
+    background-color: var(--primary-btn-hover) !important;
+    color: rgb(var(--font-light)) !important;
+}
+
+.hsi_wv_manually_placed_button.secondary {
+    color: rgb(var(--font-light)) !important;
+    background-color: var(--secondary-color) !important;
+    border: none !important;
+}
+
+.hsi_wv_manually_placed_button.secondary:hover {
+    background-color: var(--secondary-btn-hover) !important;
+    color: rgb(var(--font-light)) !important;
+}
+
+.hsi_wv_manually_placed_button.neutral {
+    color: rgb(var(--font-light)) !important;
+    background: var(--neutral-color) !important;
+    border: none !important;
+}
+
+.hsi_wv_manually_placed_button.neutral:hover {
+    color: rgb(var(--secondary-rgb)) !important;
+}
+.hsi_wv_manually_placed_button.ui-button:active,
+.hsi_wv_manually_placed_button.ui-button:hover,
+.hsi_wv_manually_placed_button.ui-button:focus {
+    box-shadow: none;
+}
+
+.hsi_wv_field.column,
+.hsi_wv_field.columns {
+    margin-left: 0px;
+}
+
+/*------SECTION 2: HTML NORMALIZING -----------------------------------------
+*   INSTRUCTIONS: Setting some global properties to normalize sizing. 
+*   'rem' is used in place of px where ever possible to help with mobile
+*   responsiveness. 1rem is equal to 10px, 1.5rem is equal to 15px, etc.
+-----------------------------------------------------------------------------*/
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+* {
+    font-family: var(--font-family) !important;
+    line-height: var(--line-height);
+    font-weight: var(--font-weight);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    box-shadow: none !important;
+}
+
+body {
+    box-sizing: content-box !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ccc;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

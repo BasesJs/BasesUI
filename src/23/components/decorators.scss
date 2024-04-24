@@ -1,0 +1,67 @@
+/*------SECTION: DECORATORS-----------------------------------------------
+*   INSTRUCTIONS: Put global styles in this section that might get used across multiple
+*   applications in a single OnBase Environment.
+* 
+*   EXAMPLE: Try applying the 'note' class to a label to see this styling.
+*   
+-------------------------------------------------------------------------------------*/
+note,
+.note {
+    font-size: 1.5rem;
+    margin: 10px 0 10px 10px;
+    padding: 15px 10px 15px 5px !important;
+    border-left: 15px solid var(--border-color);
+    text-indent: 2px;
+    background-color: var(--border-color);
+    color: rgb(var(--font-light)) !important;
+    font-size: 1.2rem;
+    font-weight: 6;
+    width: fit-content;
+}
+
+/* TITLE WRAPPER */
+.title-wrapper input,
+.title-wrapper div hasFocus {
+    font-size: 2.8rem;
+    color: var(--font-color);
+    padding: 1px !important;
+}
+.title-wrapper label {
+    font-size: 1.4rem;
+    padding: 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.title-wrapper input::placeholder,
+.title-wrapper.readonly,
+.title-wrapper input:read-only,
+.title-wrapper.hsi_wv_field input[readonly="readonly"],
+.title-wrapper.hsi_wv_field[data-readonly="1"] div>div {
+    background: transparent !important;
+	border: none !important;
+}
+/* TITLE WRAPPER */
+.text-wrapper input,
+.text-wrapper div hasFocus {
+    font-size: 1.4rem;
+    color: var(--font-color);
+    padding: 1px !important;
+}
+.text-wrapper label {
+    font-size: 1.1rem;
+    padding: 0 0 0 10px !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.text-wrapper input::placeholder,
+.text-wrapper.readonly,
+.text-wrapper input:read-only,
+.text-wrapper.hsi_wv_field input[readonly="readonly"],
+.text-wrapper.hsi_wv_field[data-readonly="1"] div>div {
+    background: transparent !important;
+	border: none !important;
+}
+.dark.text-wrapper input,
+.dark.text-wrapper div hasFocus{	
+	color: var(--font-light);
+}

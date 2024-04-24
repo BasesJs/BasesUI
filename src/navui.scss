@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500&display=swap");
+/*TEMPLATE BASE*/
+component-template {
+    padding: 0px !important;
+    margin: 0px !important;
+    border: none !important;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow: clip !important;
+    background-color: var(--body-color);
+}
+component-template > * {
+    text-align: left;
+}
+component-template.center,
+.hsi_wv_view.center {
+    justify-content: center;
+}
+component-template.left,
+.hsi_wv_view.left {
+    justify-content: flex-start;
+}
+component-template.right,
+.hsi_wv_view.right {
+    justify-content: flex-end;
+}
+/*PANEL ADJUSTMENTS*/
+component-panel,
+.hsi_wv_panel {
+    justify-content: flex-start;
+}
+component-panel.hidden-section,
+component-panel.hidden-section > * {
+    opacity: 80%;
+}
+component-panel.hidden-section:focus,
+component-panel.hidden-section:focus > * {
+    opacity: 100%;
+}
+component-panel.hidden-section::before {
+    content: "(Hidden Section)";
+    color: var(--light-gray);
+    font-size: 1rem;
+}
+component-panel.rail,
+component-panel.container {
+    padding: 0px !important;
+    margin: 0px !important;
+    justify-content: center;
+}
+.hsi_wv_field.column,
+.hsi_wv_field.columns {
+    margin-left: 0;
+}

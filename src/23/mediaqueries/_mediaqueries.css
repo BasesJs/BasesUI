@@ -1,0 +1,193 @@
+/*Dark Mode*/
+
+/*Media Queries */
+@media (max-width: 1280px) {
+    html {
+        font-size: 11px;
+    }
+
+    .h1,
+    h1 {
+        font-size: 3.6rem;
+    }
+
+    .h2,
+    h2 {
+        font-size: 3.0rem; 
+    }
+
+    .h3,
+    h3 {
+        font-size: 2.8rem;
+    }
+
+    .h4,
+    h4 {
+        font-size: 2.4rem;
+    }
+
+    .h5,
+    h5 {
+        font-size: 1.8rem; 
+    }
+
+    .h6,
+    h6 {
+        font-size: 1.6rem;
+    }
+
+    .p,
+    p {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 550px) {
+    .small.container {
+        padding: 0 32px !important;
+    }
+}
+
+/* Rail Media Queires */
+@media (max-width: 1100px) {
+    .container:not(.small) {
+        width: 100%;
+    }
+    .row{
+        min-height: calc(var(--field-height) + 40px);
+    }
+    .rail {
+        align-self: center;
+        position: fixed;
+        top: 0;
+        z-index: 2000;
+        min-width: 40px;
+        max-width: 40px;
+        overflow-x: hide;
+        overflow-y: auto;
+        padding: 0 !important;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background: rgba(var(--light-gray), .9) !important;
+    }
+
+    .left.rail {
+        left: -7.5px;
+    }
+
+    .right.rail {
+        right: -7.5px;
+    }
+
+    .rail:not(.rail:hover):before {
+        content: '\22EE';
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 32px 16px 32px 16px !important;
+        color: var(--font-dark);
+        border-radius: 5px;
+        background: rgba(0, 0, 0, .2);
+    }
+
+    .rail:hover {
+        min-width: 300px;
+        max-width: 300px;
+        height: 100%;
+        cursor: pointer;
+        justify-content: flex-start;
+    }
+
+    .rail:hover>* {
+        display: flex;
+    }
+
+    .rail:not(.rail:hover)>* {
+        display: none;
+        padding: 0 !important;
+    }
+
+    .rail:not(.rail:hover),
+    .rail.pad-small:not(.pad-small:hover),
+    .rail.pad-medium:not(.pad-medium:hover),
+    .rail.pad-large:not(.pad-large:hover) {
+        padding: 5px !important;
+        top: 40%;
+    }
+
+    .section:has(> .rail:hover) {
+        max-width: 300px;
+    }
+
+    .header {
+        display: block;
+        padding: 0 36px !important;
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+}
+
+@media (max-width: 550px) {
+    .section {
+        gap: 0;
+        margin: 0;
+        width: 100% !important;
+    }
+
+    .container {
+        width: 100% !important;
+    }
+
+    .rail {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .hsi_wv_panel:first-child,
+    .header .hsi_wv_panel:last-child {
+        display: none;
+    }
+
+    .header .title-wrapper input {
+        font-size: 2.8rem;
+    }
+}
+
+/*We probably don't want this on everything, but for now it works. */
+/*.row, .column, .container, .card, .section,*/
+.rail {
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+@media (max-width: 550px) {
+    .row {
+        display: block;
+        width: 100% !important;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .column,
+    .columns {
+        flex: 0 1 100% !important;
+        margin-bottom: var(--medium);
+    }
+
+}
+
+@media (max-width: 550px) {
+    .side-tab-spacer {
+        display: none;
+    }
+
+    .expander {
+        display: none;
+    }
+
+    .side-tab-bar {
+        position: fixed;
+        bottom: 0;
+    }
+}

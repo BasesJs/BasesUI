@@ -1,0 +1,108 @@
+/*------SECTION: ADJUSTER------------------------------------------------
+*   INSTRUCTIONS: Short-hand classes allow the adding of different styles that are 
+*   not supported in Studio to add through the UI. This list will likely grow over time.
+-------------------------------------------------------------------------------------*/
+.pad-none {
+    padding: 0 !important
+}
+
+.pad-small {
+    padding: var(--small) !important;
+}
+
+.pad-medium {
+    padding: var(--medium) !important;
+}
+
+.pad-large {
+    padding: var(--large) !important;
+}
+
+.gap-small {
+    gap: var(--small);
+}
+
+.gap-medium {
+    gap: var(--medium);
+}
+
+.gap-large {
+    gap: var(--large);
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.justify-stretch {
+    justify-content: stretch;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-baseline {
+    justify-content: baseline;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+
+.self-align-start {
+    align-self: flex-start;
+}
+
+.self-align-end {
+    align-self: flex-end;
+}
+
+.self-align-center {
+    align-self: center;
+}
+
+.self-align-baseline {
+    align-self: baseline;
+}
+
+.self-justify-start {
+    justify-self: flex-start;
+}
+
+.self-justify-end {
+    justify-self: flex-end;
+}
+
+.self-justify-center {
+    justify-self: center;
+}
+
+.self-justify-baseline {
+    justify-self: baseline;
+}
+

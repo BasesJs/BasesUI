@@ -1,0 +1,109 @@
+/*------SECTION 5: THE GRID--------------------------------------------------
+*   INSTRUCTIONS: Provides a simple to use 12 column grid system that allows
+*   you to build rows and columns to suit more specific needs arrangement
+*   needs. The grid begins by adding a panel and assigning the row class.
+*   You add columns to the row by adding a panel and assigning the column
+*   classes, 'four' & 'columns' or 'one' and 'column'. Column width doesn't
+*   have to add up to 12, but it can not exceed 12.
+-----------------------------------------------------------------------------*/
+.row,
+.column,
+.columns {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: var(--field-height);
+}
+.row {
+    flex-flow: row nowrap;
+    width: 100%;
+    float: left;
+    flex-basis: min-content;	
+}
+.body.row {
+    align-items: stretch;
+}
+.column,
+.columns {
+    flex-flow: column nowrap;
+    float: left;
+    overflow: visible;
+    align-items: stretch;
+}
+
+.one.column,
+.one.columns {
+    flex: 0 1 8.333333333333333% !important;
+}
+
+.two.column,
+.two.columns {
+    flex: 0 1 16.66666666666667% !important;
+}
+.one-quarter.column,
+.one-quarter.columns,
+.three.column,
+.three.columns {
+    flex: 0 1 25% !important;
+}
+
+.one-third.column,
+.one-third.columns,
+.four.column,
+.four.columns {
+    flex: 0 1 33.33333333333334% !important;
+}
+
+.five.column,
+.five.columns {
+    flex: 0 1 41.66666666666668% !important;
+}
+.one-half.column,
+.one-half.columns,
+.six.column,
+.six.columns {
+    flex: 0 1 50% !important;
+}
+
+
+.seven.column,
+.seven.columns {
+    flex: 0 1 58.33333333333335% !important;
+}
+
+
+.two-thirds.column,
+.two-thirds.columns,
+.eight.column,
+.eight.columns {
+    flex: 0 1 66.66666666666668% !important;
+}
+
+.three-quarters.column,
+.three-quarters.columns,
+.nine.column,
+.nine.columns {
+    flex: 0 1 75% !important;
+}
+
+
+.ten.column,
+.ten.columns {
+    flex: 0 1 83.33333333333335% !important;
+}
+
+
+.eleven.column,
+.eleven.columns {
+    flex: 0 1 91.66666666666669% !important;
+}
+
+.full.column,
+.full.columns,
+.twelve.column,
+.twelve.columns {
+    flex: 0 1 100% !important;
+}

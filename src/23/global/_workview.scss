@@ -1,0 +1,26 @@
+/*Remove Studio Borders*/
+:root{
+    --studio-borders: 0px dashed transparent;
+}
+
+.hsi_wv_view>* {
+    text-align: left;
+}
+.hsi_wv_viewtabscontrol[data-role=screentabsbody] { overflow: hidden;}
+
+.hsi_wv_panel { padding: 0; }
+.hsi_wv_panel>.hsi_wv_panel { padding: 0; }
+
+.hsi_wv_label {
+    margin: 0;
+    color: var(--font-color);
+}
+
+#screenobjectheader,
+#WVBreadcrumbContainer {
+    display: none !important;
+}
+
+
+
+

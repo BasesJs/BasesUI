@@ -1,0 +1,21 @@
+{
+  "name": "naviantui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "compiler.js",
+  "scripts": {
+    "compile": "nodemon --ignore public/ compiler",
+    "watch": "sass --watch src:public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://NaviantProductDev@dev.azure.com/NaviantProductDev/NaviantUI/_git/NaviantUI"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.0",
+    "sass": "^1.71.1"
+  }
+}

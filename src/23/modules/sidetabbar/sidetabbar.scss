@@ -1,0 +1,78 @@
+/*
+    This will be compiled and added to the _studio-structural.css
+*/
+.side-tab-bar {
+    flex: 0 0 calc(var(--rail-width) / 2.5) !important;
+    margin: 0 0 0 0 !important;
+    min-width: calc(var(--rail-width) / 2.5);
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(var(--light-gray), .05);
+    border-left: 1px solid var(--border-color);
+}
+
+.side-tab-spacer {
+    max-height: 73px;
+    border-right: 1px solid rgba(var(--dark-gray), .25);
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 10px !important;
+    overflow: hidden;
+}
+
+.side-tab-footer {
+    border-top: 1px solid rgba(var(--dark-gray), .25);
+    border-right: 1px solid rgba(var(--dark-gray), .25);	
+}
+
+.side-tab {
+    padding: 16px 0 16px 0 !important;
+    display: flex;
+    justify-content: center;
+    max-height: 48px;
+    border-left: 10px solid rgba(var(--dark-gray), .25);
+    overflow: hidden;
+    border-right: 1px solid rgba(var(--dark-gray), .25);
+    border-top: 1px solid rgba(var(--dark-gray), .25);
+}
+
+.side-tab:hover {
+    color: rgb(var(--font-light)) !important;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border-left: 10px solid var(--primary-color);
+}
+
+.side-tab-label {
+    padding-right: 8px !important;
+    height: 48px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    color: var(--font-dark);
+}
+
+.side-tab:hover .side-tab-label {
+    color: white;
+}
+
+.active-side-tab {
+    border-right: none !important;
+    border-left: 10px solid var(--primary-color);
+    background-color: white;
+}
+
+.active-side-tab .side-tab-label {
+    color: var(--primary-color) !important;
+}
+
+.side-tab,
+.side-tab:hover,
+.active-side-tab,
+a.active-side-tab .side-tab-label {
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
